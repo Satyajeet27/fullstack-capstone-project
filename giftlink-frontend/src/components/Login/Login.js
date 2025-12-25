@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './LoginPage.css';
+import './Login.css';
 
 function LoginPage() {
 
@@ -36,7 +36,7 @@ function LoginPage() {
                         type="text"
                         className="form-control"
                         placeholder="Enter your password"
-                        value={email}
+                        value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>

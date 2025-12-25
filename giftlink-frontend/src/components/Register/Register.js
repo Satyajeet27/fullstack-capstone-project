@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './RegisterPage.css';
+import './Register.css';
 
 function RegisterPage() {
     const [firstName, setFirstName] = useState('');
@@ -20,7 +20,7 @@ function RegisterPage() {
 
                     {/* insert code here to create input elements for all the variables - firstName, lastName, email, password */}
                         <div className="mb-4">
-                            <label htmlFor="firstName" className="form label"> FirstName</label><br>
+                            <label htmlFor="firstName" className="form label"> FirstName</label>
                             <input
                             id="firstName"
                             type="text"
@@ -31,7 +31,7 @@ function RegisterPage() {
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="lastName" className="form label"> LastName</label><br>
+                            <label htmlFor="lastName" className="form label"> LastName</label>
                             <input
                             id="lastName"
                             type="text"
@@ -42,7 +42,7 @@ function RegisterPage() {
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="email" className="form label"> Email</label><br>
+                            <label htmlFor="email" className="form label"> Email</label>
                             <input
                             id="email"
                             type="email"
@@ -53,7 +53,7 @@ function RegisterPage() {
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="password" className="form label"> Password</label><br>
+                            <label htmlFor="password" className="form label"> Password</label>
                             <input
                             id="password"
                             type="text"
@@ -75,7 +75,7 @@ function RegisterPage() {
                 </div>
             </div>
 
-         )//end of return
+         )
 }
 
 export default RegisterPage;
