@@ -19,7 +19,7 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    background: url('./background-colors.jpg');
+    /* background: url('./background-colors.jpg'); */
     filter: blur(8px);
 }
 

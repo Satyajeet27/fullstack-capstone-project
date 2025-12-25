@@ -1,4 +1,7 @@
 const connectToDatabase = require("../models/db");
+const {Router}= require("express")
+
+const router= new Router()
 
 router.get('/', async (req, res) => {
     try {
@@ -11,7 +14,8 @@ router.get('/', async (req, res) => {
         const collection= db.collection("gifts")
         // Task 3: Fetch all gifts using the collection.find method. Chain with toArray method to convert to JSON array
         // const gifts = {{insert code here}}
-        const gifts= collection.find({}).toArray()
+        const gifts=await collection.find({}).toArray()
+        // console.log("gifts data",gifts)
         // Task 4: return the gifts using the res.json method
         res.json(gifts);
     } catch (e) {
