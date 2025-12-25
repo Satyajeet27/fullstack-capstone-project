@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
 import LoginPage from './components/Login/Login';
 import RegisterPage from './components/Register/Register';
+import SearchPage from './components/SearchPage/SearchPage';
 import DetailsPage from './components/DetailsPage/DetailsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -18,6 +19,7 @@ function App() {
           <Route path="/app/login" element={<LoginPage/>} />
           <Route path="/app/register" element={<RegisterPage />} />
           <Route path="/app/product/:productId" element={<DetailsPage/>} />
+          <Route path="/app/search" element={<SearchPage/>} />
         </Routes>
         </>
   );
