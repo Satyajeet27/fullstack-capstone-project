@@ -6,7 +6,7 @@ import { useAppContext } from '../../context/AuthContext';
 //Step 1 - Task 3
 import { useNavigate } from 'react-router-dom';
 
-import './LoginPage.css';
+import './Login.css';
 
 function LoginPage() {
     const [email, setEmail] = useState('');
